@@ -1,8 +1,8 @@
 import styled from 'styled-components/native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { FlatList } from 'react-native';
-import { Provider } from './index';
 import { RectButton } from 'react-native-gesture-handler';
+import { Provider } from './index';
 
 export const Container = styled.View`
   flex: 1;
@@ -19,6 +19,15 @@ export const Header = styled.View`
 `;
 
 export const HeaderTitle = styled.Text`
+  color: #f4ede8;
+  font-size: 20px;
+  font-family: 'RobotoSlab-Regular';
+  line-height: 28px;
+`;
+
+export const LogOutButton = styled.TouchableOpacity``;
+
+export const LogOutButtonText = styled.Text`
   color: #f4ede8;
   font-size: 20px;
   font-family: 'RobotoSlab-Regular';
@@ -46,7 +55,7 @@ export const ProvidersListTitle = styled.Text`
   font-size: 24px;
   margin-bottom: 24px;
   color: #f4ede8;
-  font-family: 'RobotoSlab-Medium'
+  font-family: 'RobotoSlab-Medium';
 `;
 
 export const ProviderContainer = styled(RectButton)`
